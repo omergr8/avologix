@@ -1,0 +1,147 @@
+.main {
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text {
+  text-align: center;
+}
+.heading {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.absolute {
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+}
+.text h2 {
+  font-size: 40px;
+}
+.text p {
+  font-size: 18px;
+  width: 48%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.viewAllDiv {
+  text-align: center;
+  cursor: pointer;
+  color: #15b6ac;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.viewAllDiv:hover {
+  color: #139e95;
+}
+
+.arrowIcons {
+  font-size: 22px !important;
+}
+.arrowIcons div {
+  margin-top: -16px;
+}
+/* card css */
+.cardMain1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cardMain {
+  width: 380px;
+  margin-bottom: 20px;
+}
+.cardMain:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(21, 182, 172, 0.51) 100%
+  );
+  border-radius: 10px;
+}
+.cardMain:hover .absoluteButton {
+  display: block;
+}
+.cardImage {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+}
+.absoluteButton {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.detailsButton {
+  height: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+  color: #15b6ac;
+  border: 1px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.cardText {
+  text-align: center;
+  width: 100%;
+}
+.cardText h2 {
+  font-size: 24px;
+}
+.cardText p {
+  font-size: 16px;
+  line-height: 40px !important;
+}
+
+/* Modal css */
+.modalMain {
+}
+.modalContainer {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modalImage {
+  text-align: center;
+}
+.modalText {
+  text-align: left;
+  max-width: 600px;
+}
+.modalText h2 {
+  font-size: 30px;
+}
+.modalText h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.modalText p {
+  font-size: 18px;
+}
+@media screen and (max-width: 1100px) {
+  .heading {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .text p {
+    font-size: 18px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

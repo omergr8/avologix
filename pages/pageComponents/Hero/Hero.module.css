@@ -1,0 +1,63 @@
+.container {
+  width: 80%;
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 9;
+}
+.heroFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  width: 65%;
+}
+.text h2 {
+  font-size: 45px;
+  font-weight: 400;
+}
+.text h2 span {
+  font-weight: 700;
+}
+.text p {
+  width: 60%;
+}
+.quoteButton {
+  background-color: #15b6ac;
+  border-radius: 25px;
+  height: 45px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: 1px solid white;
+  color: white;
+}
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .heroFlex {
+    display: block;
+    text-align: center;
+  }
+  .text {
+    width: 100%;
+  }
+  .text h2 {
+    font-size: 45px;
+    font-weight: 400;
+  }
+  .text h2 span {
+    font-weight: 700;
+  }
+  .text p {
+    width: 100%;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}

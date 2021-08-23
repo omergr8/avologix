@@ -1,0 +1,113 @@
+.main {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card {
+  box-shadow: 3px 6px 10px 10px rgba(21, 182, 172, 0.2);
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.loaderAbs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.heading {
+  text-align: center;
+  position: relative;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading h2 {
+  font-size: 40px;
+}
+.absolute {
+  position: absolute;
+  bottom: -45%;
+  right: 14%;
+}
+.formFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
+}
+.formInput {
+  border: unset;
+  border-bottom: 1px solid #cbcbcb;
+  background-color: unset;
+  width: 40%;
+  margin-bottom: 50px;
+}
+.formInput:focus,
+.formInput2:focus,
+.formInput3:focus {
+  outline: none;
+}
+.formInput2 {
+  border: unset;
+  border-bottom: 1px solid #cbcbcb;
+  background-color: unset;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.formInput3 {
+  resize: unset;
+  border: unset;
+  border-bottom: 1px solid #cbcbcb;
+  background-color: unset;
+  width: 100%;
+  margin-bottom: 50px;
+  height: 100px;
+}
+.formButton {
+  height: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #15b6ac;
+  color: white;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+}
+.formButton:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(19, 184, 184, 0.24);
+  /* Lowering the shadow */
+}
+@media screen and (max-width: 800px) {
+  .formFlex {
+    flex-wrap: wrap;
+  }
+  .formInput {
+    width: 100%;
+  }
+  .heading {
+    width: 100%;
+  }
+  .heading h2 {
+    font-size: 24px;
+  }
+  .absolute {
+    position: absolute;
+    bottom: -45%;
+    right: 14%;
+  }
+}

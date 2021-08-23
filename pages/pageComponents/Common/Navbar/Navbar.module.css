@@ -1,0 +1,132 @@
+.nav {
+  position: sticky;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  z-index: 99;
+}
+.navMain {
+}
+.navContainer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navLogo {
+}
+.navLinks {
+  color: white;
+}
+.navLinks p {
+  cursor: pointer;
+}
+.isActive {
+  border-bottom: 2px solid white;
+  width: fit-content;
+}
+.navLinksFlex {
+  display: flex;
+  align-items: center;
+}
+.navLinksFlex p {
+  margin-left: 40px;
+}
+.navLinksButtonDiv {
+  margin-left: 100px;
+}
+.navLinksButton {
+  height: 45px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 25px;
+  background-color: white;
+  color: #15b6ac;
+  border: 1px solid white;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+  /* font-size: 16px; */
+}
+.navLinksButton:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(19, 184, 184, 0.24);
+  /* Lowering the shadow */
+}
+.mobileMenu {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.sidebarMain {
+}
+.toggleButton {
+  position: relative;
+  z-index: 999;
+}
+.sideLogo {
+  text-align: center;
+  padding-top: 20px;
+}
+.drawerBody {
+  /* height: 80%; */
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  margin-left: 20px;
+}
+.drawerBody p {
+  margin-top: 50px;
+  cursor: pointer;
+}
+.isDisplay {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.65s ease;
+
+  position: relative;
+  z-index: 10;
+}
+.isHide {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.65s ease;
+}
+.sidebarFixed {
+  position: fixed;
+  background: linear-gradient(
+    180deg,
+    rgba(21, 182, 172, 1) 0%,
+    rgba(119, 232, 225, 1) 100%
+  );
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  z-index: 10;
+}
+.sidebarOverlay {
+  position: absolute;
+  height: 800px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(36, 35, 35, 0.425);
+}
+@media screen and (max-width: 1210px) {
+  .navLinks {
+    display: none;
+  }
+  .mobileMenu {
+    display: block;
+  }
+}
