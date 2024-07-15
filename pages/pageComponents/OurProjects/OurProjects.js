@@ -4,8 +4,8 @@ import { projectData } from "../Common/projectsData";
 import projects from "../../../public/projects.svg";
 import Image from "next/image";
 import Card from "./Components/Card";
-import { IoIosArrowDown } from "react-icons/Io";
-import { IoIosArrowUp } from "react-icons/Io";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
 
 const OurProjects = () => {
   const [data_, setData_] = useState(projectData.slice(0, 3));
